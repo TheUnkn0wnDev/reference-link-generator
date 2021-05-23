@@ -1,14 +1,4 @@
 	<meta property="og:url" content="https://theunkowndeveloper.github.io/reference-link-generator/">
-
-
-<div id="reference_text"></div>
-
-<span style="font-size:38px;">enter details here</span>
-				<input id="your_url" placeholder="(enter url)"></input>
-				<input id="your_ref" placeholder="(enter reference)"></input>
-				<span>then just copy this url:</span>
-				<input id="your_link" readonly></input>
-
 <script>
   var vtext = document.getElementById("reference_text");
 	vtext.style.display = "block";
@@ -28,3 +18,13 @@ function linkChangey(){
 		yourLink.value = encodeURIComponent(encryptString(yourUrl.value))+"?ref="+encodeURIComponent(encryptString(yourRef.value));
 	}
 </script>
+
+<div id="reference_text"></div>
+
+<span style="font-size:38px;">enter details here</span>
+				<input id="your_url" placeholder="(enter url)"></input>
+				<input id="your_ref" placeholder="(enter reference)"></input>
+				<span>then just copy this url:</span>
+				<input id="your_link" readonly></input>
+
+
