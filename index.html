@@ -1,60 +1,27 @@
+
+<!DOCTYPE html>
 <html>
-	<head>
-<meta property="og:url" content="https://theunkowndeveloper.github.io/reference-link-generator/"></head><body>
-<script>
-  var vtext = document.getElementById("reference_text");
-	vtext.style.display = "block";
-	if(window.location.hash){
-		vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
-	}else{
-		vtext.textContent = "test";
-	}
-	
-	var yourUrl = document.getElementById("your_url");
-	var yourRef = document.getElementById("your_ref");
-var yourLink = document.getElementById("your_link");
-function linkChangey(){
-	if(yourUrl.value==""){
-		yourLink.value = "https://theunkowndeveloper.github.io/reference-link-generator/";
-	}else{
-		yourLink.value = "https://theunkowndeveloper.github.io/reference-link-generator/#"+encodeURIComponent(encryptString(yourUrl.value))+"?ref="+encodeURIComponent(encryptString(yourRef.value));
-	}
-	
-		var vtext = document.getElementById("reference_text");
-	vtext.style.display = "block";
-	if(window.location.hash){
-		vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
-	}else{
-		vtext.textContent = "link will apear here";
-	}
-		</script>
-
-<div id="reference_text"></div>
-
-<span style="font-size:38px;">enter details here</span>
-				<input id="your_url" placeholder="(enter url)"></input>
-				<input id="your_ref" placeholder="(enter reference)"></input>
-				<span>goto this url to get your link:</span>
-				<input id="your_link" readonly></input>
-       <div id="primary-container">
-
-<div id="cover">
-<form method="get" action="1">
-    <div class="tb">
-      <div class="td"><input type="text" name="q" placeholder="put reference here" required></div>
-      <div class="td" id="s-cover">
-        <button type="submit">
-          <div id="s-circle"></div>
-          <span></span>
-        </button>
-      </div>
-    </div>
-  </form>
-</div>
-    </div>
-
-<script type="text/javascript" src="https%3A%2F%2Fcse.google.com%2Fcse/tools/onthefly?form=searchbox_demo&lang="></script>
-        </div>
-
+<head>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+  <script>
+  var url = prompt("Url input");
+      var ref = prompt("Reference input");
+  var UrlData = url.data
+  p = document.createElement("p");
+  p.innerHTML = url+"?ref="+ref;
+  document.body.appendChild(p);
+  </script>
+  <body>
+  </body>
+  </html>
+    <script type="text/javascript">
+        
+    </script>
 </body>
 </html>
