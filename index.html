@@ -3,6 +3,12 @@
 
 <div id="reference_text"></div>
 
+<span style="font-size:38px;">enter details here</span>
+				<input id="your_url" placeholder="(enter url)"></input>
+				<input id="your_ref" placeholder="(enter reference)"></input>
+				<span>then just copy this url:</span>
+				<input id="your_link" readonly></input>
+
 <script>
   var vtext = document.getElementById("reference_text");
 	vtext.style.display = "block";
@@ -10,5 +16,15 @@
 		vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
 	}else{
 		vtext.textContent = "test";
+	}
+	
+	var yourUrl = document.getElementById("your_url");
+	var yourRef = document.getElementById("your_ref");
+var yourLink = document.getElementById("your_link");
+function linkChangey(){
+	if(yourUrl.value==""){
+		yourLink.value = "https://theunkowndeveloper.github.io/reference-link-generator/";
+	}else{
+		yourLink.value = encodeURIComponent(encryptString(yourUrl.value))+"?ref="+encodeURIComponent(encryptString(yourRef.value));
 	}
 </script>
