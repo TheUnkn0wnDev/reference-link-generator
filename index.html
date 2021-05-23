@@ -1,4 +1,6 @@
-	<meta property="og:url" content="https://theunkowndeveloper.github.io/reference-link-generator/">
+<html>
+	<head>
+<meta property="og:url" content="https://theunkowndeveloper.github.io/reference-link-generator/"></head><body>
 <script>
   var vtext = document.getElementById("reference_text");
 	vtext.style.display = "block";
@@ -15,16 +17,26 @@ function linkChangey(){
 	if(yourUrl.value==""){
 		yourLink.value = "https://theunkowndeveloper.github.io/reference-link-generator/";
 	}else{
-		yourLink.value = encodeURIComponent(encryptString(yourUrl.value))+"?ref="+encodeURIComponent(encryptString(yourRef.value));
+		yourLink.value = "https://theunkowndeveloper.github.io/reference-link-generator/#"+encodeURIComponent(encryptString(yourUrl.value))+"?ref="+encodeURIComponent(encryptString(yourRef.value));
 	}
-</script>
+	
+		var vtext = document.getElementById("reference_text");
+	vtext.style.display = "block";
+	if(window.location.hash){
+		vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
+	}else{
+		vtext.textContent = "link will apear here";
+	}
+		</script>
 
 <div id="reference_text"></div>
 
 <span style="font-size:38px;">enter details here</span>
 				<input id="your_url" placeholder="(enter url)"></input>
 				<input id="your_ref" placeholder="(enter reference)"></input>
-				<span>then just copy this url:</span>
+				<span>goto this url to get your link:</span>
 				<input id="your_link" readonly></input>
 
 
+</body>
+</html>
