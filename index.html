@@ -1,0 +1,11 @@
+<div id="reference_text"></div>
+
+<script>
+  var vtext = document.getElementById("reference_text");
+	vtext.style.display = "block";
+	if(window.location.hash){
+		vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
+	}else{
+		vtext.textContent = "test";
+	}
+</script>
