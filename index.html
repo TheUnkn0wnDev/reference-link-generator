@@ -15,7 +15,7 @@ function linkChangey(){
 	if(yourUrl.value==""){
 		yourLink.value = "https://theunkowndeveloper.github.io/reference-link-generator/";
 	}else{
-		yourLink.value = encodeURIComponent(encryptString(yourUrl.value))+"?ref="+encodeURIComponent(encryptString(yourRef.value));
+		yourLink.value = encodeURIComponent(encryptString(yourUrl.value));+"?ref="+encodeURIComponent(encryptString(yourRef.value));
 	}
 </script>
 
