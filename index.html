@@ -1,14 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Test</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Test</title>
+  <style>
+    input{display:block; margin-bottom:10px;}
+  </style>
 </head>
+
 <body>
-	<form action="action.php" method="post">
-        <label for="first-name">Url:</label>
-        <input type="text" name="url" id="url">
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-    </form>
+  <h1>Form Validation Example</h1>
+  <h2>Please enter your name</h2>
+
+  <form action="index.html" method="post">
+    <label for="url">Url:</label>
+    <input id="url" type="text" />
+    
+    <label for="ref">Put your reference text here:</label>
+    <input id="ref" type="text" />
+    
+    <input type="submit" value="Submit" />
+  </form>
 </body>
-</html> 
+</html>
